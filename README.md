@@ -9,10 +9,10 @@ The files description is as follows:
 
 A dictionary is created where all the words of database are stored. We implemented a dictionary where we stored each word of database and its frequency. The specific professions are compared to this dictionary and output.txt has output attached. By comparison various demographics such as profession, gender are extracted using dictionary.
 
-writedatabase.py
+2. writedatabase.py
 We extracted tweets using Twitter Stream API. We calculated the sentiments of each tweet using textblob and stored those tweets who polarity was non-zero. For each such tweet we then extracted the details of the user like screen name, location, follower’s count, following, verification status, etc using twitter Rest API and all the details were stored in the mongodb database.
 
-Record_db.json
+3. Record_db.json
 This file includes the stored database of mongodb in json format. One of the record is:
 
 {
@@ -41,5 +41,5 @@ This file includes the stored database of mongodb in json format. One of the rec
 
 }
 
-output.txt
+4. output.txt
 This file contains the number of people having gender and common profession. This file is output of readmongo.py.
